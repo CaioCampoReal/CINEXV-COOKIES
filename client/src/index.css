@@ -210,35 +210,37 @@ button{
 
 /* FOOTER */
 
+/* Adicione ou edite o estilo existente para o footer */
 footer {
-background: #042a7e;
-padding: 50px 0px 20px 0px;
-position: relative;
+  background: #042a7e;
+  padding: 50px 0 10px 0;
+  position: relative;
+  width: 100%;
 }
 
 footer h4 {
-color: #919496;
-font-size: 0.8em;
-text-transform: uppercase;
+  color: #919496;
+  font-size: 0.8em;
+  text-transform: uppercase;
 }
 
 footer .navbar-nav a {
-color: white;
-font-size: 0.8em;
+  color: white;
+  font-size: 0.8em;
 }
 
 footer .navbar-nav a:hover {
-color: #9bf0e1;
-text-decoration: none;
+  color: #9bf0e1;
+  text-decoration: none;
 }
 
 footer ul {
-list-style: none;
+  list-style: none;
 }
 
 footer ul li {
-float: right;
-margin: 0 5px;
+  float: right;
+  margin: 0 5px;
 }
 
 /* FIM FOOTER */
@@ -343,8 +345,12 @@ margin: 0 5px;
 
 #text-slider{
   color: white;
-  text-align: center;
-  padding: 10px;
+  text-align: left;
+  padding: 8px;
+  background-color: #f73434;
+  width: fit-content;
+  height: fit-content;
+  font-weight: 900;
 }
 /*  FIM CAROUSEL */
 

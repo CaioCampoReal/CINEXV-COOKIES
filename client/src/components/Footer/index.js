@@ -8,7 +8,7 @@ const companyLinks = [
     { text: 'Sobre', href: '#' },
     { text: 'Empregos', href: '#' },
     { text: 'Imprensa', href: '#' },
-    { text: 'Novidades', href: '#' }
+    { text: 'ListaFilmes', href: '#' }
 ];
 
 // Links da seção "Comunidades"

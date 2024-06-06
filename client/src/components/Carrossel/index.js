@@ -11,7 +11,7 @@ function Carrossel() {
   return (
     <main style={{ paddingTop: '150px' }}>
       <section className="slider" id="pagina3">
-        <h3 id="text-slider">Filmes em Exibição</h3>
+        <h3 id="text-slider">Destaques!</h3>
         <div className="slides">
           {/* Radio Button */}
           <input type="radio" name="radio-btn" id="radio1" />

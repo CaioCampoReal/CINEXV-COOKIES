@@ -24,20 +24,30 @@ export const createFilme = async (req, res, next) => {
 };
 
 // Ler todos os produtos
-export const getFilmes = async (req, res, next) => {
+export const getFilmes = async (req, res) => {
     try {
-
+        console.log("getFilmes");
         const collectionRef = collection(db, 'filmes');
-        const filmes = await getDocs(collectionRef);
-    
-        const filmeData = filmes.docs.map((doc) =>  new Filme(doc.id, doc.data().nome, doc.data().genero, doc.data().dataExtreia, doc.data().poster)
-); // Extract data
-        
-        res.status(200).send(filmeData);
+        console.log("achou collection" + collectionRef);
+        const filmesSnapshot = await getDocs(collectionRef);
+        console.log("achou docs" + filmesSnapshot);
+
+        const filmes = filmesSnapshot.docs.map((doc) => new Filme(
+            doc.id,
+            doc.data().nome,
+            doc.data().genero,
+            doc.data().dataExtreia,
+            doc.data().poster
+        ));
+
+        console.log('Filmes data:', filmes);  
+        res.status(200).json(filmes);
     } catch (error) {
-        res.status(400).send(error.message);
+        console.error('Error fetching filmes:', error); 
+        res.status(400).json({ error: error.message }); 
     }
 };
+
 // Ler um produto específico
 export const getFilme = async (req, res, next) => {
     try {
