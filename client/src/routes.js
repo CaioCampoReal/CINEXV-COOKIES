@@ -19,10 +19,9 @@ function RoutesApp() {
                 <div className="content-wrap">
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        {/* <Route path="*" element={<Home />} /> */}
-                        {/* <Route path="/sobre" element={<Sobre />} />
+                        <Route path="/sobre" element={<Sobre />} />
                         <Route path="/Lancamentos" element={<Lancamentos />} />
-                        <Route path="/Contato" element={<Contato />} /> */}
+                        <Route path="/Contato" element={<Contato />} />
                     </Routes>
                 </div>
                 <Footer />

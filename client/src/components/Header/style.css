@@ -29,10 +29,20 @@ a{
     cursor: pointer;
   }
   
-  /* Media query para telas menores que 768px */
-  @media (max-width: 768px) {
-    .login-button {
-      padding: 0.4rem 0.8rem; /* Reduz o padding do botão em telas menores */
-      font-size: 0.9rem; /* Reduz o tamanho da fonte do botão em telas menores */
-    }
+
+  /* Adicione esta regra de mídia ao seu arquivo de estilo CSS */
+@media (max-width: 768px) {
+  .login-button {
+    padding: 0.2rem 0.2rem; /* Reduza ainda mais o padding do botão em telas menores */
+    font-size: 0.8rem; /* Reduza o tamanho da fonte do botão em telas menores */
   }
+
+  .user-info-authenticated {
+    flex-direction: column; /* Alinhe os itens verticalmente em telas menores */
+    align-items: center; /* Centralize os itens horizontalmente em telas menores */
+  }
+
+  .logout-button {
+    margin-top: 0.5rem; /* Adicione um espaço entre o botão de login e o botão de logout */
+  }
+}
